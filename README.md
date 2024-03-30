@@ -6,6 +6,7 @@ AuthApp is a simple and secure authentication system built with modern web techn
 
 - User registration and authentication
 - Password hashing and verification
+- Password reset
 - Session management
 - Email OTP verification
 - JSON Web Token (JWT) authentication
