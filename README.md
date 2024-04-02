@@ -3,6 +3,7 @@
 AuthApp is a simple and secure authentication system built with modern web technologies.
 
 
+
 ## Features
 
 - User registration and authentication
@@ -15,11 +16,17 @@ AuthApp is a simple and secure authentication system built with modern web techn
 - OAuth 2.0 with Google
 
 
+
 # Installation/Project Setup
 To install and run AuthApp, follow these steps:
 
+
+
 ## Clone the repository:
+```bash
 git clone https://github.com/Afeh/authapp.git
+```
+
 
 ## Install dependencies
 
@@ -70,6 +77,7 @@ python manage.py runserver
 * Note: You would have to make your own Email Server settings in settings.py
 
 
+
 ## API Endpoints
 
 | Endpoint | Method | Description |
@@ -83,6 +91,7 @@ python manage.py runserver
 | /api/v1/auth/profile/ | GET | Tests user authentication |
 
 - Check through postman collections for more information on the API endpoints
+
 
 
 ## Technology Stack
