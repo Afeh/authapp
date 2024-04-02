@@ -51,3 +51,18 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+6. Run Migrations
+```bash
+python manage.py migrate
+```
+
+7. Create Superuser
+```bash
+python manage.py createsuperuser
+```
+
+8. Run Server
+```bash
+python manage.py runserver
+```
