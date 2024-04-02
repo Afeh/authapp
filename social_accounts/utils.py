@@ -44,7 +44,8 @@ def register_social_user(provider, email, first_name, last_name):
 	password = generate_strong_password()
 	if user.exists():
 		if provider == user[0].auth_provider:
-			login_social_user(email, password)
+			result = login_social_user(email, password)
+			return result
 		else:
 			raise AuthenticationFailed(
 				detail=f"please continue your login with {user[0].auth_provider}"
@@ -61,4 +62,6 @@ def register_social_user(provider, email, first_name, last_name):
 		register_user.is_verified=True
 		register_user.save()
 
-		login_social_user(email=register_user.email, password=password)
+		result = login_social_user(email=register_user.email, password=password)
+
+		return result
