@@ -18,7 +18,36 @@ AuthApp is a simple and secure authentication system built with modern web techn
 # Installation/Project Setup
 To install and run AuthApp, follow these steps:
 
-1. Clone the repository:
+## Clone the repository:
 git clone https://github.com/Afeh/authapp.git
 
-2. Install dependencies
+## Install dependencies
+
+1. Install Python 3.12.2
+```bash
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.12.2
+```
+
+2. Install Python 3.12-venv
+```bash
+sudo apt install python3.12-venv
+```
+
+3. Create Virtual Environment
+```bash
+cd authapp
+python3.12 -m venv venv
+```
+
+4. Activate Virtual Environment
+```bash
+source venv/bin/activate
+```
+
+5. Install Requirements
+```bash
+pip install -r requirements.txt
+```
