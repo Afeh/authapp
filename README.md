@@ -66,3 +66,28 @@ python manage.py createsuperuser
 ```bash
 python manage.py runserver
 ```
+
+* Note: You would have to make your own Email Server settings in settings.py
+
+
+## API Endpoints
+
+| Endpoint | Method | Description |
+| --- | --- | --- |
+| /api/v1/auth/register/ | POST | Register a new user |
+| /api/v1/auth/verify-email/ | POST | Verify user email|
+| /api/v1/auth/login/ | POST | Login a user |
+| /api/v1/auth/password-reset/ | POST | Reset a user's password |
+| /api/v1/auth/password-reset-confirm/<uidb64>/<token>/ | GET | Confirms a password request |
+| /api/v1/auth/set-new-password/ | PATCH | Resets user password |
+| /api/v1/auth/profile/ | GET | Tests user authentication |
+
+- Check through postman collections for more information on the API endpoints
+
+
+## Technology Stack
+* Python
+* Django
+* REST Framework
+* JSON Web Token
+* OAuth 2.0
